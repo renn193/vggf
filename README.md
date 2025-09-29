@@ -1,72 +1,64 @@
-This is a [Astro](https://nextjs.org/) starter kit bootstrapped with `npm create astro@latest -- --template basics`.
+<p align="center"><img src="https://raw.githubusercontent.com/titaniumnetwork-dev/Ultraviolet-Static/main/public/uv.png" height="250"></p>
 
-## Getting Started
+<h1 align="center">Ultraviolet</h1>
 
-First, run the development server:
+<a href="https://www.npmjs.com/package/@titaniumnetwork-dev/ultraviolet"><img src="https://img.shields.io/npm/v/@titaniumnetwork-dev/ultraviolet.svg?maxAge=3600" alt="npm version" /></a>
 
-```bash
-npm run dev
+> [!CAUTION]
+> Please note that this project isn't really maintained anymore before making issues! It has been superseded by [Scramjet](https://github.com/MercuryWorkshop/scramjet). An example application setup can be found [here](https://github.com/MercuryWorkshop/Scramjet-App).
+
+Ultraviolet is a highly advanced web proxy used for evading internet censorship or accessing websites in a controlled sandbox. It is designed with security and performance in mind. Ultraviolet intercepts HTTP requests with a service worker, while adhering to the [TompHTTP specifications](https://github.com/tomphttp) and is a leader in innovative web proxy technologies.
+
+## Features
+
+Ultraviolet offers several features that set it apart from its predecessors, including CAPTCHA and hCAPTCHA support, URL encoding settings for added security, client-side configuration via service-workers, high speed compared to other web proxies, blacklist settings and more for easy hosting, leak prevention, regular updates, and improved resource usage and speed for better setups with a dedicated server instance.
+
+## Supported Sites
+
+Some of the popular websites that Ultraviolet supports include:
+
+- [Google](https://google.com)
+- [Youtube](https://www.youtube.com)
+- [Spotify](https://spotify.com)
+- [Discord](https://discord.com)
+- [Reddit](https://reddit.com)
+- [GeForce NOW](https://play.geforcenow.com/)
+- [now.gg](https://now.gg)
+
+## Used by
+
+- [Holy Unblocker LTS](https://github.com/QuiteAFancyEmerald/Holy-Unblocker)
+- [Alu](https://github.com/titaniumnetwork-dev/Alu)
+- [Incognito](https://github.com/titaniumnetwork-dev/Incognito)
+- [Nebula](https://github.com/NebulaServices/Nebula)
+- [AnuraOS](https://github.com/MercuryWorkshop/anuraOS)
+- [Terbium](https://github.com/TerbiumOS/webOS)
+- [Metallic](https://github.com/Metallic-Web/Metallic)
+
+## Upgrading
+
+A guide for updating from any version to v3 can be found [here](https://github.com/titaniumnetwork-dev/Ultraviolet/wiki/Upgrading).
+
+## Older Ultraviolet versions
+
+Starting from v3, Ultraviolet uses [bare-mux](https://github.com/MercuryWorkshop/bare-mux), a library that allows you to switch out your Bare client.
+
+If you operate using an older Ultraviolet, we encourage you to update.
+
+If you're too lazy to do either of the above, you can install an outdated and unsupported version of Ultraviolet.
+
+```sh
+npm install @titaniumnetwork-dev/ultraviolet@1
 ```
 
-You can also run the Astro template easily using Wasmer (check out the [install guide](https://docs.wasmer.io/install)):
+## Changelog
 
-```bash
-npm run build
-wasmer run . -- --port 3000
-```
+Changes are documented in the [changelog](./CHANGELOG.md).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
+This repository can be built, but it can't be deployed to any services. See [Ultraviolet-App](https://github.com/titaniumnetwork-dev/Ultraviolet-App) for a complete and customizable Ultraviolet setup that you can deploy.
 
-## Deploy on Wasmer Edge
+## Documentation
 
-The easiest way to deploy your Astro App is to use the [Wasmer Edge](https://wasmer.io/products/edge).
-
-Live example: https://astro-wasmer-starter.wasmer.app/
-
-First, you'll need to run `npm run build`, and then, to deploy to Wasmer Edge:
-
-```bash
-wasmer deploy
-```
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Documentation can be found in the [wiki](https://github.com/titaniumnetwork-dev/Ultraviolet/wiki).
