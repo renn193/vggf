@@ -1,0 +1,4 @@
+kind: wasmer.io/App.v0
+name: vggf
+owner: renn193
+package: .
